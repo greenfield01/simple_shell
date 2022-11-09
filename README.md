@@ -1,43 +1,50 @@
 # This is a README with the description of this project
 
-# Group project - 0x16. C - simple_shell
+## Group project - 0x16. C - simple_shell
 
-	this project is about a Unix shell which is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. The shell is both an interactive command language and a scripting language, and is used by the operating system to control the execution of the system using shell scripts.
+	this project is about a Unix shell which is a command-line interpreter that provides a command line user interface for Unix-like operating systems. 
+	
+	The shell is both an interactive command language and a scripting language, and is used by the operating system to control the execution of the system using shell scripts.
 
-# Background Context
+## Background Context
 
 A simple UNIX command interpreter.
 
-# GENERAL context
-* How a shell works
-* What is a pid and a ppid
-* How to manipulate the environment of the current process
-* What is the difference between a function and a system call
-* How to create processes
-* The three prototypes of main
-* How the shell uses the PATH to find the programs
-* How to execute another program with the execve system call
-* How to suspend the execution of a process until one of its children terminates
-* Shows What EOF / “end-of-file” is
+## GENERAL context
+* Who designed and implemented the original Unix operating system.
+* Who wrote the first version of the UNIX shell.
+* Who invented the B programming language (the direct predecessor to the C programming language).
+* Who is Ken Thompson.
+* How a shell works. 
+* What is a pid and a ppid.
+* How to manipulate the environment of the current process.
+* What is the difference between a function and a system call.
+* How to create processes.
+* What are the three prototypes of main.
+* How the shell uses the PATH to find the programs.
+* How to execute another program with the execve system call.
+* How to suspend the execution of a process until one of its children terminates.
+* Shows What EOF / “end-of-file” is.
 
-# Requirement satisfied
-* Editors used: vi, vim, emacs
-* All files are compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-* All files end with a new line
-* A README.md file, at the root of the folder of the project as mandatory
-* All codes use the Betty style. It is checked using betty-style.pl and betty-doc.pl
-* Shell does not have any memory leaks
-* No more than 5 functions per file
-* All header files are include guarded
-* The use of system calls only when needed
-* An AUTHORS file at the root of this repository, listing all individuals having contributed content to the repository.
+## Requirement satisfied
+* Editors used: vi, vim, emacs.
+* All files are compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89.
+* All files end with a new line.
+* A README.md file, at the root of the folder of the project as mandatory.
+* All codes use the Betty style. It is checked using betty-style.pl and betty-doc.pl.
+* Shell does not have any memory leaks.
+* No more than 5 functions per file.
+* All header files are include guarded.
+* The use of system calls only when needed.
+* An AUTHORS file at the root of this repository, listing all individuals having contributed content to the repository. 
 
-# Output
+## Output
 
 	Unless specified otherwise, the program has the exact same output as sh (/bin/sh) as well as the exact same error output.
-	The only difference is when printing an error, the name of the program is equivalent to the argv[0]
 
-# Example of error with sh:
+	The only difference is when printing an error, the name of the program is equivalent to the argv[0].
+
+## Example of error with sh:
 
 	$ echo "qwerty" | /bin/sh
 	/bin/sh: 1: qwerty: not found
@@ -45,7 +52,7 @@ A simple UNIX command interpreter.
 	/bin/../bin/sh: 1: qwerty: not found
 	$
 
-//Same error with your program hsh:
+*Same error with your program hsh:
 
 	$ echo "qwerty" | ./hsh
 	./hsh: 1: qwerty: not found
@@ -53,7 +60,7 @@ A simple UNIX command interpreter.
 	./././hsh: 1: qwerty: not found
 	$
 
-# List of allowed functions and system calls
+## List of allowed functions and system calls
 
 * access (man 2 access)
 * chdir (man 2 chdir)
@@ -87,13 +94,13 @@ A simple UNIX command interpreter.
 * wait4 (man 2 wait4)
 * write (man 2 write)
 
-# Compilation
+## Compilation
 
 //The shell is compiled this way:
 
 	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
-# Testing
+## Testing
 
 //The shell works like this in interactive mode:
 
@@ -120,28 +127,28 @@ A simple UNIX command interpreter.
 
 
 # Tasks Questions (mandatory)
-# 0. Betty would be proud
+### 0. Betty would be proud
 
 	Write a beautiful code that passes the Betty checks
 
-# 1. Simple shell 0.1
+### 1. Simple shell 0.1
 
 	Write a UNIX command line interpreter.
 
-# 2. Simple shell 0.2
+### 2. Simple shell 0.2
 
 Simple shell 0.1 +
 
 	* Handle command lines with arguments
 
-# 3. Simple shell 0.3
+### 3. Simple shell 0.3
 
 Simple shell 0.2 +
 
 	* Handle the PATH
 	* fork must not be called if the command doesn’t exist
 
-# 4. Simple shell 0.4
+### 4. Simple shell 0.4
 
 Simple shell 0.3 +
 
@@ -149,13 +156,13 @@ Simple shell 0.3 +
 	* Usage: exit
 	* You don’t have to handle any argument to the built-in exit
 
-# 5. Simple shell 1.0
+### 5. Simple shell 1.0
 
 Simple shell 0.4 +
 
 	* Implement the env built-in, that prints the current environment
 
-# 6. Simple shell 0.1.1(Advance)
+### 6. Simple shell 0.1.1(Advance)
 
 Simple shell 0.1 +
 	
@@ -168,92 +175,93 @@ Simple shell 0.1 +
 
 	* be able to move the cursor
 
-# 7. Simple shell 0.2.1
+### 7. Simple shell 0.2.1
 
 Simple shell 0.2 +
 
 	* You are not allowed to use strtok
 
-# 8. Simple shell 0.4.1
+### 8. Simple shell 0.4.1
 
 Simple shell 0.4 + 
 
 	* handle arguments for the built-in exit
 	* Usage: exit status, where status is an integer used to exit the shell
 
-# 9. setenv, unsetenv
+### 9. setenv, unsetenv
 
 Simple shell 1.0 +
 
-//Implement the setenv and unsetenv builtin commands
+//Implement the setenv and unsetenv builtin commands.
 
-	setenv
-	
-		* Initialize a new environment variable, or modify an existing one
-		* Command syntax: setenv VARIABLE VALUE
-		* Should print something on stderr on failure
-	unsetenv
-	
-		* Remove an environment variable
-		* Command syntax: unsetenv VARIABLE
-		* Should print something on stderr on failure
+setenv
 
-# 10. cd
+	* Initialize a new environment variable, or modify an existing one.
+	* Command syntax: setenv VARIABLE VALUE.
+	* Should print something on stderr on failure.
+
+
+unsetenv
+
+	* * Remove an environment variable.
+	* Command syntax: unsetenv VARIABLE VALUE.
+	* Should print something on stderr on failure.
+
+
+### 10. cd
 
 Simple shell 1.0 +
 
 //implement the builtin command cd:Changes the current directory of the process.
 
-	* Command syntax: cd [DIRECTORY]
-	* If no argument is given to cd the command must be interpreted like cd $HOME
-	* You have to handle the command cd -
-	* You have to update the environment variable PWD when you change directory
-	
-man chdir, man getcwd
+	* Command syntax: cd [DIRECTORY].
+	* If no argument is given to cd the command must be interpreted like cd $HOME.
+	* You have to handle the command cd - 
+	* You have to update the environment variable PWD when you change directory.
+	man chdir, man getcwd
 
-# 11. ;
-
-Simple shell 1.0 +
-
-	* Handle the commands separator ;
-
-# 12. && and ||
+### 11. ;
 
 Simple shell 1.0 +
-	
-	* Handle the && and || shell logical operators
 
-# 13. alias
+	* Handle the commands separator ;.
+
+### 12. && and ||
+
+Simple shell 1.0 +
+	
+	* Handle the && and || shell logical operators.
+
+### 13. alias
 
 Simple shell 1.0 +
 
 * Implement the alias builtin command
 * Usage: alias [name[='value'] ...]
-	* alias: Prints a list of all aliases, one per line, in the form name='value'
-	* alias name [name2 ...]: Prints the aliases name, name2, etc 1 per line, in the form name='value'
-	* alias name='value' [...]: Defines an alias for each name whose value is given. If name is already an alias, replaces its value with value
+	* alias: Prints a list of all aliases, one per line, in the form name='value'.
+	* alias name [name2 ...]: Prints the aliases name, name2, etc 1 per line, in the form name='value'.
+	* alias name='value' [...]: Defines an alias for each name whose value is given. If name is already an alias, replaces its value with value.
 
-# 14. Variables
+### 14. Variables
 
 Simple shell 1.0 +
 
-	* Handle variables replacement
-	* Handle the $? variable
-	* Handle the $$ variable
+	* Handle variables replacement.
+	* Handle the $? variable.
+	* Handle the $$ variable.
 
-
-# 15. Comments
+### 15. Comments
 
 simple shell 1.0 +
 
-	* Handle comments (#)
+	* Handle comments (#).
 
-# 16. File as input
+### 16. File as input
 
 Simple shell 1.0 +
 
-	* Usage: simple_shell [filename]
-	* Your shell can take a file as a command line argument
-	* The file contains all the commands that your shell should run before exiting
-	* The file should contain one command per line
-	* In this mode, the shell should not print a prompt and should not read from stdin
+	* Usage: simple_shell [filename].
+	* Your shell can take a file as a command line argument.
+	* The file contains all the commands that your shell should run before exiting.
+	* The file should contain one command per line.
+	* In this mode, the shell should not print a prompt and should not read from stdin.
