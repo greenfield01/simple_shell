@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _myhistory - Displays the history list, line by line, one on each line starting at 0.
+ * _myhistory - Displays the history list, one on each line starting at 0.
  * @info: the structure containing potential arguments.
  * Return: Always 0
  */
